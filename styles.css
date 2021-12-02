@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxxw;
+}
+
+:root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+}
+
+
+
+body {
+    padding: 3.75rem;
+    background-color: var(--paleBlue);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px hsl(246deg 33% 74%);
+    ;
+    
+} 
+
+.img-container {
+    position: relative;
+}
+
+.woman {
+    
+  width: 100%;
+  border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.summary {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+}
+
+.summary-text {
+    color:var(--desaturatedBlue);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--veryPaleBlue);
+    
+    border-radius: 10%;
+    width: 88%;
+    height: 60px;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.music {
+    
+    float: left;
+}
+
+.plan a {
+    text-decoration: none;
+    display: block;
+    font-family: inherit;
+    color: var(--brightBlue);
+}
+.price {
+    display: inline-block;
+}
+
+.annual {
+    font-size: .75rem;
+    line-height: 1.5;
+}
+
+.cost {
+    color: var(--desaturatedBlue);
+    font-size: .8rem;
+}
+
+
+
+.payment-button {
+    background-color: var(--brightBlue);
+    color: var(--veryPaleBlue);
+    font-weight: 700;
+    font-size: 1rem;
+    width: 90%;
+    display: inline;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 1rem;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 15px 20px hsl(246deg 33% 74%);
+}
+
+.cancel-button {
+   display: flex;
+  margin-top: .5rem;
+  justify-content: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--desaturatedBlue);
+  font-family: inherit;
+  font-weight: 700;
+}
+
+@media(min-width:500px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+        background-size: cover;
+        background-position: 0 -15rem;
+        background-repeat: no-repeat;
+    }
+    .card {
+        width: 300px;
+        margin: 0 auto 1rem;
+        
+    }
+    
+}
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    transform: translateY(1rem);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); }
