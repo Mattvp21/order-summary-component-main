@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-boxxw;
+    box-sizing: border-box;
 }
 
 :root {
@@ -22,7 +22,7 @@ html {
 
 
 body {
-    padding: 3.75rem;
+    padding: 5rem;
     background-color: var(--paleBlue);
     justify-content: center;
     align-items: center;
@@ -30,19 +30,18 @@ body {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
     width: 100%;
+    justify-content: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 15px 20px hsl(246deg 33% 74%);
-    ;
     
 } 
 
 .img-container {
     position: relative;
+    
 }
 
 .woman {
@@ -57,6 +56,7 @@ body {
     margin-top: .5rem;
     font-size: 1.5rem;
     font-weight: 900;
+    margin-top: 1rem;
 }
 
 .summary {
@@ -76,12 +76,13 @@ body {
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--veryPaleBlue);
-    
+    margin-top: 1rem;
     border-radius: 10%;
     width: 88%;
     height: 60px;
     text-align: center;
     margin-left: 1rem;
+    margin-bottom: .5rem;
 }
 
 .music {
@@ -97,6 +98,7 @@ body {
 }
 .price {
     display: inline-block;
+    transform: translateX(-1.25rem);
 }
 
 .annual {
@@ -128,6 +130,11 @@ body {
     box-shadow: 0px 15px 20px hsl(246deg 33% 74%);
 }
 
+.payment-button:hover {
+    background-color: blueviolet;
+    transition: all .5s;
+}
+
 .cancel-button {
    display: flex;
   margin-top: .5rem;
@@ -141,13 +148,14 @@ body {
 
 @media(min-width:500px) {
     body {
+        display: flex;
+        flex-direction: column;
         background-image: url("images/pattern-background-desktop.svg");
-        background-size: cover;
-        background-position: 0 -15rem;
+        background-size: 100% auto;
         background-repeat: no-repeat;
     }
     .card {
-        width: 300px;
+        width: 375px;
         margin: 0 auto 1rem;
         
     }
